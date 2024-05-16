@@ -1,0 +1,66 @@
+.details_wrapper {
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 60px 90px;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  gap: 20px;
+}
+.details_wrapper > div:first-child {
+  justify-self: center;
+  align-self: center;
+}
+.details_bio div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.details_image {
+  justify-self: center;
+  align-self: center;
+  width: 200px;
+  height: 250px;
+  object-fit: contain;
+}
+
+.details_stats div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  align-items: center;
+}
+.details_stats p {
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.card_shadow {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card_shadow:hover {
+  transform: translateY(-5px);
+}
+
+.card_shadow-id {
+  font-weight: bold;
+}
+
+.pokemon_shadow-image {
+  width: 100px; /* Adjust image size as needed */
+  height: auto;
+}
+
+.pokemon_shadow-name {
+  margin-top: 5px;
+  text-transform: capitalize;
+}

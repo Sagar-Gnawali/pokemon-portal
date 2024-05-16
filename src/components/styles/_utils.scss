@@ -1,0 +1,59 @@
+$button-back: #fff;
+
+.align-center {
+  display: flex;
+  justify-content: center;
+}
+@keyframes load {
+  0% {
+    opacity: 0.08;
+    filter: blur(2px);
+    letter-spacing: 3px;
+  }
+  100% {
+  }
+}
+.loading_wrapper {
+  @extend .align-center;
+  width: 40%;
+  position: absolute;
+  padding-top: 125px;
+  left: 50%;
+  transform: translateX(-50%);
+  &_loader {
+    height: auto;
+    position: absolute;
+    margin: auto;
+    animation: load 0.5s infinite 0s ease-in-out;
+    animation-direction: alternate;
+    text-shadow: 0 0 1px white;
+    font-weight: 400;
+    font-size: 23px;
+  }
+}
+button {
+  font-size: 32px;
+  padding: 10px 30px;
+  height: 55px;
+  background-color: $button-back;
+  margin-top: 100px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: outline 0.2s linear;
+  margin-bottom: 100px;
+  border-radius: 15px;
+  margin: 20px 5px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+}
+
+input {
+  width: 90%;
+  height: 35px;
+  padding: 5px 13px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 18px;
+}

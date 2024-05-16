@@ -1,0 +1,19 @@
+.align-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.not_found_wrapper {
+  @extend .align-items;
+  height: 450px;
+}
+.not_found_message {
+  @extend .align-items;
+  margin: 10px 50px;
+}
+.not_found_button {
+  @extend .align-items;
+  button {
+    cursor: pointer;
+  }
+}

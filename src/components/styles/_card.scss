@@ -1,0 +1,48 @@
+@import "./utils";
+.card_wrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 15px;
+  margin: 10px 60px;
+  &_id {
+    margin-bottom: 10px;
+  }
+  div {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 20px;
+  }
+  div:hover {
+    box-shadow: rgba(1, 1, 19, 0.25) 0px 60px 90px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+  img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+  }
+  p {
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+}
+
+.card {
+  margin: 20px 20px;
+}
+@media (max-width: 800px) {
+  .card_wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .card_wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
