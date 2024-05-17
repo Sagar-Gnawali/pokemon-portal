@@ -56,11 +56,26 @@
 }
 
 .pokemon_shadow-image {
-  width: 100px; /* Adjust image size as needed */
+  width: 100px; 
   height: auto;
 }
 
 .pokemon_shadow-name {
   margin-top: 5px;
   text-transform: capitalize;
+}
+@media (max-width:750px) {
+  .details_wrapper{
+    grid-template-columns: auto;
+    margin: 30 45px;
+  }
+}
+@media (max-width:450px) {
+  .details_wrapper{
+    margin: 10 15px;
+  }
+ .details_image{
+  height: 150px;
+  width: 150px;
+ } 
 }
